@@ -118,9 +118,6 @@ public class Schema extends JLabel {
 		
 		com.apple.eawt.FullScreenUtilities.setWindowCanFullScreen(frame,true);
 		Application application = Application.getApplication();
-		JMenuBar jMenuBar = new JMenuBar();
-		jMenuBar.add(new JMenu("test"));
-		application.setDefaultMenuBar(jMenuBar);
 		
 		frame.addComponentListener(new ComponentAdapter() {
 			Timer timer = new Timer(50, e -> reloadBuffer());
